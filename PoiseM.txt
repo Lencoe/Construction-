@@ -1,0 +1,68 @@
+create database if not exists PoiseM;
+
+use PoiseM;
+
+create table Project(
+    id int NOT NULL AUTO_INCREMENT,
+    projectNumber int(15),
+    projectName varchar(250),
+    buildingType varchar(250),
+    physicalAddress varchar(250),
+    totalFee double precision,
+    amountPaid double precision,
+    deadline String,
+    emailAddress varchar(250),
+    projectStatus varchar(15),
+    primary key (id)
+);
+
+ALTER TABLE Project AUTO_INCREMENT = 1;
+
+
+
+create table  Architect(
+    id int NOT NULL AUTO_INCREMENT,
+    architectName varchar(250),
+    architectSurname varchar(250),
+    architectNumber int(15),
+    architectEmailAddress varchar(250),
+    architectPhysicalAddress varchar(250),
+    primary key (id)
+);
+
+ALTER TABLE  Architect AUTO_INCREMENT = 1;
+
+
+
+create table Contractor(
+    id int NOT NULL AUTO_INCREMENT,
+    contractorName varchar(250),
+    contractorSurname varchar(250),
+    ContractorNumber int(15),
+    contractorEmailAddress varchar(250),
+    ContractorPhysicalAddress varchar(250),
+    primary key (id)
+);
+
+ALTER TABLE Contractor AUTO_INCREMENT = 1;
+
+
+
+
+
+create table Customer(
+    id int NOT NULL AUTO_INCREMENT,
+    customerName varchar(250),
+    customerSurname varchar(250),
+    customerNumber int(15),
+    customerEmailAddress varchar(250),
+    customerPhysicalAddress varchar(250),
+    primary key (id)
+);
+
+ALTER TABLE Customer AUTO_INCREMENT = 1;
+
+
+
+
+
