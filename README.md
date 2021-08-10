@@ -12,7 +12,7 @@ o Allows a user to see a list of projects that are past the due date.
 o Writes the updated details about the projects to the text file when
 the program ends.
 
-#at the end finalize the project and print out the invoice for the Cstomer.
+#at the end finalize the project and print out the invoice for the Customer.
 
 Used Javadoc to generate API documentation from documentation
 comments for your program.
